@@ -1,0 +1,52 @@
+body.light-theme {
+  background-color: #fff;
+
+  .calculator {
+    background-color: #ddd;
+
+    input {
+      color: #555;
+      background-color: #ddd;
+      box-shadow: .15rem .15rem .3rem #000, -.15rem -.15rem .3rem #fff;
+    }
+
+    button {
+      background-color: #eee;
+      color: #555;
+      box-shadow: .15rem .15rem .3rem #000, -.15rem -.15rem .3rem #fff;
+      transition-duration: .2s;
+
+      &:hover,
+      &.clicking {
+        background-color: #ddd;
+        color: #333;
+      }
+
+      &:disabled,
+      &.clicking,
+      &:active {
+        box-shadow: .05rem .05rem .1rem #000, -.05rem -.05rem .1rem #fff;
+      }
+
+      &:disabled,
+      &:disabled:hover {
+        color: #999;
+        background-color: #ddd;
+      }
+    }
+  }
+
+  .change-mode {
+    background-color: #ddd;
+    color: #2229;
+
+    &:hover {
+      color: #222;
+      box-shadow: .2rem .2rem .5rem #555;
+    }
+
+    & .set-theme-light {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+body.dark-theme {
+  background-color: #333;
+}
+body.dark-theme .calculator {
+  background-color: #444;
+}
+body.dark-theme .calculator input {
+  color: #ccc;
+  background-color: #444;
+  box-shadow: 0.15rem 0.15rem 0.3rem #000, -0.15rem -0.15rem 0.3rem #777;
+}
+body.dark-theme .calculator button {
+  background-color: #555;
+  color: #ccc;
+  box-shadow: 0.15rem 0.15rem 0.3rem #000, -0.15rem -0.15rem 0.3rem #777;
+  transition-duration: 0.2s;
+}
+body.dark-theme .calculator button:hover, body.dark-theme .calculator button.clicking {
+  background-color: #666;
+  color: #eee;
+}
+body.dark-theme .calculator button:disabled, body.dark-theme .calculator button.clicking, body.dark-theme .calculator button:active {
+  box-shadow: 0.05rem 0.05rem 0.1rem #000, -0.05rem -0.05rem 0.1rem #777;
+}
+body.dark-theme .calculator button:disabled:hover, body.dark-theme .calculator button:disabled {
+  color: #999;
+  background-color: #666;
+}
+body.dark-theme .change-mode {
+  background-color: #555;
+  color: rgba(238, 238, 238, 0.6);
+}
+body.dark-theme .change-mode:hover {
+  color: #eee;
+  box-shadow: 0.2rem 0.2rem 0.5rem #000;
+}
+body.dark-theme .change-mode .set-theme-dark {
+  display: none;
+}/*# sourceMappingURL=dark.css.map */

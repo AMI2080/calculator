@@ -1,0 +1,39 @@
+body.light-theme {
+  background-color: #fff;
+}
+body.light-theme .calculator {
+  background-color: #ddd;
+}
+body.light-theme .calculator input {
+  color: #555;
+  background-color: #ddd;
+  box-shadow: 0.15rem 0.15rem 0.3rem #000, -0.15rem -0.15rem 0.3rem #fff;
+}
+body.light-theme .calculator button {
+  background-color: #eee;
+  color: #555;
+  box-shadow: 0.15rem 0.15rem 0.3rem #000, -0.15rem -0.15rem 0.3rem #fff;
+  transition-duration: 0.2s;
+}
+body.light-theme .calculator button:hover, body.light-theme .calculator button.clicking {
+  background-color: #ddd;
+  color: #333;
+}
+body.light-theme .calculator button:disabled, body.light-theme .calculator button.clicking, body.light-theme .calculator button:active {
+  box-shadow: 0.05rem 0.05rem 0.1rem #000, -0.05rem -0.05rem 0.1rem #fff;
+}
+body.light-theme .calculator button:disabled, body.light-theme .calculator button:disabled:hover {
+  color: #999;
+  background-color: #ddd;
+}
+body.light-theme .change-mode {
+  background-color: #ddd;
+  color: rgba(34, 34, 34, 0.6);
+}
+body.light-theme .change-mode:hover {
+  color: #222;
+  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+body.light-theme .change-mode .set-theme-light {
+  display: none;
+}/*# sourceMappingURL=light.css.map */

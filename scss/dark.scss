@@ -1,0 +1,52 @@
+body.dark-theme {
+  background-color: #333;
+
+  .calculator {
+    background-color: #444;
+
+    input {
+      color: #ccc;
+      background-color: #444;
+      box-shadow: .15rem .15rem .3rem #000, -.15rem -.15rem .3rem #777;
+    }
+
+    button {
+      background-color: #555;
+      color: #ccc;
+      box-shadow: .15rem .15rem .3rem #000, -.15rem -.15rem .3rem #777;
+      transition-duration: .2s;
+
+      &:hover,
+      &.clicking {
+        background-color: #666;
+        color: #eee;
+      }
+
+      &:disabled,
+      &.clicking,
+      &:active {
+        box-shadow: .05rem .05rem .1rem #000, -.05rem -.05rem .1rem #777;
+      }
+
+      &:disabled:hover,
+      &:disabled {
+        color: #999;
+        background-color: #666;
+      }
+    }
+  }
+
+  .change-mode {
+    background-color: #555;
+    color: #eee9;
+
+    &:hover {
+      color: #eee;
+      box-shadow: .2rem .2rem .5rem #000;
+    }
+
+    & .set-theme-dark {
+      display: none;
+    }
+  }
+}
