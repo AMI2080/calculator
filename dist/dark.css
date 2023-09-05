@@ -4,8 +4,11 @@ body.dark-theme {
 body.dark-theme .calculator {
   background-color: #444;
 }
-body.dark-theme .calculator input {
+body.dark-theme .calculator input#display,
+body.dark-theme .calculator input#display + .display-function {
   color: #ccc;
+}
+body.dark-theme .calculator input#display {
   background-color: #444;
   box-shadow: 0.15rem 0.15rem 0.3rem #000, -0.15rem -0.15rem 0.3rem #777;
 }

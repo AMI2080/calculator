@@ -17,41 +17,42 @@
   <div class="calculator-container">
     <div class="calculator">
       <div class="row">
-        <input type="number" value="0" id="result" />
+        <input type="text" value="0" id="display" disabled data-current="first" />
+        <span class="display-function"></span>
       </div>
       <div class="row">
         <button name="mc" disabled>MC</button>
         <button name="mr" disabled>MR</button>
-        <button name="m-minus">M-</button>
-        <button name="m-plus">M+</button>
-        <button name="div">÷</button>
+        <button name="m-">M-</button>
+        <button name="m+">M+</button>
+        <button name="div" data-btn="/">÷</button>
       </div>
       <div class="row">
         <button name="reverse">+/-</button>
-        <button name="num-7">7</button>
-        <button name="num-8">8</button>
-        <button name="num-9">9</button>
-        <button name="multi">×</button>
+        <button name="Numpad7" data-btn="7">7</button>
+        <button name="Numpad8" data-btn="8">8</button>
+        <button name="Numpad9" data-btn="9">9</button>
+        <button name="multi" data-btn="*">×</button>
       </div>
       <div class="row">
-        <button name="backspace"><i class="fa-solid fa-play"></i></button>
-        <button name="num-4">4</button>
-        <button name="num-5">5</button>
-        <button name="num-6">6</button>
-        <button name="minus">-</button>
+        <button name="Backspace" data-btn="Backspace"><i class="fa-solid fa-play"></i></button>
+        <button name="Numpad4" data-btn="4">4</button>
+        <button name="Numpad5" data-btn="5">5</button>
+        <button name="Numpad6" data-btn="6">6</button>
+        <button name="minus" data-btn="-">-</button>
       </div>
       <div class="row">
-        <button name="esc">C</button>
-        <button name="num-1">1</button>
-        <button name="num-2">2</button>
-        <button name="num-3">3</button>
-        <button name="plus" class="plus">+</button>
+        <button name="Escape" data-btn="Escape">C</button>
+        <button name="Numpad1" data-btn="1">1</button>
+        <button name="Numpad2" data-btn="2">2</button>
+        <button name="Numpad3" data-btn="3">3</button>
+        <button name="plus" data-btn="+" class="plus">+</button>
       </div>
       <div class="row">
-        <button name="num-0">0</button>
-        <button name="num-00">00</button>
-        <button name="dot">.</button>
-        <button name="equal">=</button>
+        <button name="Numpad0" data-btn="0">0</button>
+        <button name="Numpad00" data-btn="00">00</button>
+        <button name="NumpadDecimal" data-btn=".">.</button>
+        <button name="equal" data-btn="=">=</button>
       </div>
     </div>
   </div>
@@ -59,6 +60,8 @@
     <i class="fa-regular fa-sun fa-2x set-theme-light"></i>
     <i class="fa-regular fa-moon fa-2x set-theme-dark"></i>
   </div>
+  <!-- https://github.com/royNiladri/js-big-decimal -->
+  <script src="https://unpkg.com/js-big-decimal@1.3.1/dist/web/js-big-decimal.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

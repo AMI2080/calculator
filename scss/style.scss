@@ -43,12 +43,28 @@ body {
   input {
     width: 100%;
     height: 7rem;
+    padding-block: 2rem 1rem;
     font-size: min(8.2vw, 3.25rem);
+    text-align: right;
     margin-bottom: 1rem;
     padding-inline: .75rem;
     border-radius: .5rem;
     border: none;
     outline: none;
+  }
+
+  input#display[data-current=error] {
+    font-size: 2rem;
+  }
+
+  input#display+.display-function {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1rem;
+    top: .75rem;
+    right: 1.5rem;
+    cursor: default;
   }
 
   button {
