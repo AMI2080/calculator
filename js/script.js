@@ -157,9 +157,8 @@ document.addEventListener('keyup', function (event) {
   calculation.keyEvent(key);
   document.querySelector(`button[data-btn="${key}"]`)?.classList.remove("clicking");
 });
-document.querySelectorAll('button').forEach(function (button) {
-  button.addEventListener('click', function () {
-    const inputName = this.getAttribute('data-btn');
-    calculation.keyEvent(inputName);
-  });
+document.querySelector('.calculator').addEventListener('click', function (e) {
+  const clickedBtn = e.target.closest('button');
+  if (!clickedBtn) return;
+  calculation.keyEvent(clickedBtn.dataset.btn);
 });
